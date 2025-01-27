@@ -16,8 +16,11 @@ public class Lab16c
 		System.out.println("word with 4 chars = "+test.countWordsWithXChars(4));
 		System.out.println("word with 5 chars = "+test.countWordsWithXChars(5));
 
+		System.out.println("\ncountWordsWithXChars = " + test.countWordsWithXChars(3));
+		
 		int vowelsRemoved = test.removeWordsWithXChars(3);
 		System.out.println("\nafter removing words with 3 chars \n" + test);
+		System.out.println("\ncountWordsWithXChars = " + test.countWordsWithXChars(3));
 		System.out.println("\nnumber of vowels in the words removed == " + vowelsRemoved);
 		System.out.println("\n\n");
 	}
