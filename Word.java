@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Word
 {
 	private String word;
-	private static final String vowels = "AEIOUaeiou";   //static means only one
+	private static final String VOWELS = "AEIOUaeiou";   //static means only one
 
 
 	public Word()
@@ -26,17 +26,13 @@ public class Word
 	{
 		int count = 0;
 
-		for(int i = 0; i < getLength(); i++)
-		{
-			if(vowels.indexOf(word.substring(i,i+1)) != -1)
-				count++;
-		}
-
 		//Loop for every letter in "word"
-
 			//Use indexOf to see if the letter is in the string "vowels"
 
-
+		for(int i = 0; i < getLength(); i++)
+			if(VOWELS.indexOf(word.substring(i,i+1)) != -1)
+				count++;
+		
 		return count;
 	}
 
