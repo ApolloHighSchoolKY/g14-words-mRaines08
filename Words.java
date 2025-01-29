@@ -31,7 +31,8 @@ public class Words
 			wordList.add(new Word(chopper.next()));
 		}
 
-
+		//to close a scanner
+		chopper.close();
 	}
 
 	public int countWordsWithXChars(int size)
@@ -54,7 +55,7 @@ public class Words
 		int vowelCount = 0;
 
 		//for each Word in the ArrayList "words" loop
-		for(int i = wordList.size()-1; i >=0; i--)
+		for(int i = wordList.size()-1; i >= 0; i--)
 		{
 			if(wordList.get(i).getLength() == size)
 			{
